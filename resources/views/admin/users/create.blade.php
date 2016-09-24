@@ -19,7 +19,7 @@
 
 
                         <fieldset class="mt-sm">
-                            <legend>Account Edit Form <small>Some explanation text</small></legend>
+                            <legend>Create User Form <small>Some explanation text</small></legend>
                         </fieldset>
 
                         <div class="form-group">
@@ -58,8 +58,8 @@
                         </div>
 
                         <div class="form-group">
-                            {!! Form::label('file', 'Upload Picture:', ['class'=>'control-label col-sm-4']) !!}
-                            <div class="col-sm-8">{!! Form::file('file', null, ['class'=>'form-control input-transparent']) !!}</div>
+                            {!! Form::label('photo_id', 'Upload Picture:', ['class'=>'control-label col-sm-4']) !!}
+                            <div class="col-sm-8">{!! Form::file('photo_id', null, ['class'=>'form-control input-transparent']) !!}</div>
                             {{--<label class="control-label col-sm-4" for="prefix">Prefix</label>
                             <div class="col-sm-4"><input type="text" id="prefix" name="prefix" class="form-control input-transparent"></div>--}}
                         </div>

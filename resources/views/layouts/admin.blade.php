@@ -25,17 +25,15 @@
 <nav id="sidebar" class="sidebar nav-collapse collapse">
     <ul id="side-nav" class="side-nav">
         <li class="active">
-            <a href="index.html"><i class="fa fa-home"></i> <span class="name">Dashboard</span></a>
+            <a href="/admin"><i class="fa fa-home"></i> <span class="name">Dashboard</span></a>
         </li>
         <li class="panel ">
             <a class="accordion-toggle collapsed" data-toggle="collapse"
-               data-parent="#side-nav" href="#forms-collapse"><i class="fa fa-pencil"></i> <span class="name">Forms</span></a>
+               data-parent="#side-nav" href="#forms-collapse"><i class="glyphicon glyphicon-user"></i> <span class="name">Users</span></a>
             <ul id="forms-collapse" class="panel-collapse collapse ">
-                <li class=""><a href="form_account.html">Account</a></li>
-                <li class=""><a href="form_article.html">Article</a></li>
-                <li class=""><a href="form_elements.html">Elements</a></li>
-                <li class=""><a href="form_validation.html">Validation</a></li>
-                <li class=""><a href="form_wizard.html">Wizard</a></li>
+                <li class=""><a href="{{route('admin.users.index')}}">All Users</a></li>
+                <li class=""><a href="{{route('admin.users.create')}}">Create Users</a></li>
+
             </ul>
         </li>
         <li class="panel ">
