@@ -16,6 +16,7 @@
                         <thead>
                         <tr>
                             <th>#</th>
+                            <th>Picture</th>
                             <th>Name</th>
                             <th>Role</th>
                             <th>Email</th>
@@ -32,7 +33,10 @@
 
                             <tr>
                                 <td>{{$user->id}}</td>
-                                <td>{{$user->name}}</td>
+                                <td>
+                                    <img class="img-rounded" src="{{$user->photo ? $user->photo->file : '/img/14.png'}}" alt="" height="50">
+                                </td>
+                                <td><a href="{{route('admin.users.edit', $user->id)}}">{{$user->name}}</a></td>
                                 <td>{{$user->role->name}}</td>
                                 <td><a href="#">{{$user->email}}</a></td>
                                 <td><span class="badge bg-gray-lighter text-gray fw-semi-bold">{{$user->status == 1 ? 'Active' : 'Not Active'}}</span></td>

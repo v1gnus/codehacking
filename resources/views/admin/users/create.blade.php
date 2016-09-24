@@ -7,7 +7,7 @@
     <h2 class="page-title">Create Users <small>Statistics and more</small></h2>
     <div class="row">
 
-        <div class="col-md-8">
+        <div class="col-md-9">
             <section class="widget">
 
 
@@ -65,15 +65,17 @@
                         </div>
 
                         <div class="form-group">
-                            {!! Form::submit('Create User', ['class'=>'btn btn-primary active']) !!}
+                            <div class="col-sm-8 col-sm-offset-4">
+                                {!! Form::submit('Create User', ['class'=>'btn btn-primary active']) !!}
+                            </div>
                         </div>
 
                         {!! Form::close() !!}
 
-                        @include('includes.form_error')
 
                     </div>
                 </div>
+
 
 
 
@@ -144,6 +146,10 @@
             </section>
         </div>
 
+    </div>
+
+    <div class="row">
+        @include('includes.form_error')
     </div>
 </div>
 
