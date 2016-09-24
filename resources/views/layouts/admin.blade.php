@@ -366,14 +366,9 @@
             </div>
         </div>
     </header>
-    <div class="content container">
-        <h2 class="page-title">Dashboard <small>Statistics and more</small></h2>
-        <div class="row">
 
             @yield('content')
 
-        </div>
-    </div>
     <div class="loader-wrap hiding hide">
         <i class="fa fa-circle-o-notch fa-spin"></i>
     </div>
