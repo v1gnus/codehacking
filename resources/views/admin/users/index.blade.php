@@ -7,6 +7,12 @@
     <h2 class="page-title">Users Page <small>Statistics and more</small></h2>
     <div class="row">
 
+        @if(Session::has('delete_user'))
+
+            <p class="bg-danger">{{session('delete_user')}}</p>
+
+        @endif
+
         <div class="col-md-12">
             <section class="widget">
                 <h3>Hover <span class="fw-semi-bold">Table</span></h3>

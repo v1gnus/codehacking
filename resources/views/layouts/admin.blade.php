@@ -38,11 +38,10 @@
         </li>
         <li class="panel ">
             <a class="accordion-toggle collapsed" data-toggle="collapse"
-               data-parent="#side-nav" href="#stats-collapse"><i class="fa fa-area-chart"></i> <span class="name">Statistics</span></a>
+               data-parent="#side-nav" href="#stats-collapse"><i class="fa fa-area-chart"></i> <span class="name">Posts</span></a>
             <ul id="stats-collapse" class="panel-collapse collapse ">
-                <li class=""><a href="stat_statistics.html">Stats</a></li>
-                <li class=""><a href="stat_charts.html">Charts</a></li>
-                <li class=""><a href="stat_realtime.html">Realtime</a></li>
+                <li class=""><a href="{{route('admin.posts.index')}}">All Posts</a></li>
+                <li class=""><a href="{{route('admin.posts.create')}}">Create Posts</a></li>
             </ul>
         </li>
         <li class="panel ">
@@ -319,8 +318,8 @@
                     </a>
                     <ul id="account-menu" class="dropdown-menu account" role="menu">
                         <li role="presentation" class="account-picture">
-                            {{asset('img/2.png')}}<img src="img/2.png" alt="">
-                            Philip Daineka
+                            <img src="{{asset('img/2.png')}}" alt="">
+                            {{ Auth::user()->name }}
                         </li>
                         <li role="presentation">
                             <a href="form_account.html" class="link">
@@ -351,17 +350,12 @@
                         <i class="fa fa-bars"></i>
                     </a>
                 </li>
-                <li class="hidden-xs"><a href="login.html"><i class="glyphicon glyphicon-off"></i></a></li>
+                <li class="hidden-xs"><a href="{{ url('/logout') }}"><i class="glyphicon glyphicon-off"></i></a></li>
             </ul>
             <form id="search-form" class="navbar-form pull-right" role="search">
                 <input type="search" class="form-control search-query" placeholder="Search...">
             </form>
-            <div class="notifications pull-right">
-                <div class="alert pull-right">
-                    <a href="#" class="close ml-xs" data-dismiss="alert">&times;</a>
-                    <i class="fa fa-info-circle mr-xs"></i> Check out Light Blue <a id="notification-link" href="#">settings</a> on the right!
-                </div>
-            </div>
+
         </div>
     </header>
 

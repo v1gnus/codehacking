@@ -137,12 +137,25 @@
                                 <div class="col-sm-4"><input type="text" id="prefix" name="prefix" class="form-control input-transparent"></div>--}}
                             </div>
 
-                            <div class="form-group">
-                                <div class="col-sm-8 col-sm-offset-4">
+                            <div class="col-sm-offset-4">
+                            <div class="form-group col-sm-6">
+                                <div class="pull-right">
                                     {!! Form::submit('Edit User', ['class'=>'btn btn-primary active']) !!}
                                 </div>
                             </div>
 
+                            {!! Form::close() !!}
+
+
+
+                            {!! Form::open(['method'=>'DELETE', 'action'=> ['AdminUsersController@destroy', $user->id]]) !!}
+
+                            <div class="form-group col-sm-6">
+                                <div class="col-sm-12">
+                                    {!! Form::submit('Delete User', ['class'=>'btn btn-danger active']) !!}
+                                </div>
+                            </div>
+                            </div>
                             {!! Form::close() !!}
 
 
