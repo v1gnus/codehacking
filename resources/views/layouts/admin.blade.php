@@ -376,5 +376,7 @@
 <script src="{{asset('js/app.js')}}"></script>
 <script src="{{asset('js/settings.js')}}"></script>
 
+            @yield('page_specific_scripts')
+
 </body>
 </html>

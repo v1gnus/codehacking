@@ -63,3 +63,14 @@
     </div>
 </div>
 @endsection
+
+@section('page_specific_scripts')
+
+    <!-- page specific scripts -->
+    <!-- page specific libs -->
+    <script src="{{asset('lib/jquery.sparkline/index.js')}}"></script>
+
+    <!-- page application js -->
+    <script src="{{asset('js/tables-static.js')}}"></script>
+
+@endsection
