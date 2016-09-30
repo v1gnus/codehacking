@@ -42,7 +42,7 @@
                                             {{--<img class="img-rounded" src="{{$user->photo ? $user->photo->file : '/img/14.png'}}" alt="" height="50">--}}
                                             {{$post->user->name}}
                                         </td>
-                                        <td><a href="#">{{$post->category_id}}</a></td>
+                                        <td><a href="#">{{$post->category ? $post->category->name : 'Uncategorized'}}</a></td>
                                         <td><a href="#">{{$post->title}}</a></td>
                                         <td>
                                             {{--<span class="badge bg-gray-lighter text-gray fw-semi-bold">{{$user->status == 1 ? 'Active' : 'Not Active'}}</span>--}}

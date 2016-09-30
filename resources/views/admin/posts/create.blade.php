@@ -38,7 +38,7 @@
                                     {!! Form::label('category_id', 'Category:', ['class'=>'col-sm-3 control-label']) !!}
                                     {{--<label for="article-category" class="control-label col-sm-4">Category</label>--}}
                                     <div class="col-sm-9">
-                                        {!! Form::select('category_id', array('1'=>'Design', '2'=>'Bootstrap', '3'=>'ThemeForest'), null, ['class'=>'selectpicker', 'id' => 'article-category', 'data-style' => 'btn-warning', 'data-width' => 'auto']) !!}
+                                        {!! Form::select('category_id', [''=>'Choose Categories'] + $categories, null, ['class'=>'selectpicker', 'id' => 'article-category', 'data-style' => 'btn-warning', 'data-width' => 'auto']) !!}
                                         {{--<select id="article-category" name="article-category"
                                                 data-style="btn-warning"
                                                 data-width="auto"
@@ -78,7 +78,7 @@
                                 <div class="row">
                                     <div class="col-sm-9 col-sm-offset-3">
                                         <div class="btn-toolbar">
-                                            {!! Form::submit('Create User', ['class'=>'btn btn-success']) !!}
+                                            {!! Form::submit('Create Post', ['class'=>'btn btn-success']) !!}
                                             {{--<button type="submit" class="btn btn-success">Submit</button>
                                             <button type="button" class="btn btn-default">Cancel</button>--}}
                                         </div>
